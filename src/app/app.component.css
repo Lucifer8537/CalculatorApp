@@ -1,0 +1,249 @@
+.container {
+  background-color: hsl(222, 26%, 31%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.calculator-container {
+  font-family: "LeagueSpartan";
+  color: white;
+  width: 450px;
+  margin: 0 auto 0 auto;
+  gap: 25px;
+  display: grid;
+}
+.calculator-title-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.caluclator-title {
+  font-weight: 700;
+  font-size: 25px;
+}
+.toggle-container {
+  display: flex;
+  gap: 30px;
+}
+.toggle-title {
+  font-weight: 500;
+  font-size: 12px;
+  margin-top: 25px;
+}
+.toggle-main-container {
+  display: grid;
+  justify-items: center;
+}
+.toggle-value {
+  display: flex;
+  gap: 18px;
+  font-size: 10px;
+}
+.title {
+}
+.toggle-main {
+  width: 65px;
+  height: 18px;
+  background-color: hsl(223, 31%, 20%);
+  margin-top: 5px;
+  border-radius: 25px;
+  padding: 5px 5px;
+}
+.toggle-btn {
+  background-color: hsl(25, 98%, 40%);
+  width: 18px;
+  height: 18px;
+  border-radius: 50px;
+}
+.input-field::-webkit-outer-spin-button,
+.input-field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.input-field {
+  border: 0;
+  outline: 0;
+  width: 90%;
+  height: 40px;
+  padding: 3% 5%;
+  border-radius: 5px;
+  background-color: hsl(224, 36%, 15%);
+  color: white;
+  text-align: right;
+  font-family: "LeagueSpartan";
+  font-size: 35px;
+  font-weight: 700;
+}
+.keypad-container {
+  background-color: hsl(223, 31%, 20%);
+  padding: 25px 25px;
+  border-radius: 10px;
+}
+.keypad {
+  display: grid;
+  grid-template-columns: max-content max-content max-content max-content;
+  gap: 21px;
+}
+.key {
+  background-color: hsl(30, 25%, 89%);
+  width: 84px;
+  height: 47px;
+  font-family: "LeagueSpartan";
+  color: hsl(223, 31%, 20%);
+  font-size: 25px;
+  font-weight: 700;
+  border-radius: 10px;
+  box-shadow: 0px 5px 0px -2px hsl(28, 16%, 65%);
+  border: 1px solid transparent;
+}
+.lower-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.reset,
+.equal {
+  width: 47%;
+
+  height: 47px;
+  font-family: "LeagueSpartan";
+  font-size: 25px;
+  font-weight: 700;
+  border-radius: 10px;
+
+  border: 1px solid transparent;
+}
+
+.reset-color {
+  box-shadow: 0px 5px 0px -2px hsl(224, 28%, 35%);
+  background-color: hsl(225, 21%, 49%);
+  color: white;
+}
+.equal-color {
+  box-shadow: 0px 5px 0px -2px hsl(6, 70%, 34%);
+  background-color: hsl(6, 63%, 50%);
+  color: white;
+}
+
+.theme2 {
+  background-color: hsl(0, 0%, 90%);
+  .calculator-container {
+    color: black;
+  }
+  .input-field {
+    background-color: hsl(0, 0%, 93%);
+    color: black;
+  }
+  .keypad-container {
+    background-color: hsl(0, 5%, 81%);
+  }
+  .key {
+    background-color: hsl(45, 7%, 89%);
+    box-shadow: 0px 5px 0px -2px hsl(35, 11%, 61%);
+  }
+  .reset-color {
+    box-shadow: 0px 5px 0px -2px hsl(185, 58%, 25%);
+    background-color: hsl(185, 42%, 37%);
+    color: white;
+  }
+  .equal-color {
+    box-shadow: 0px 5px 0px -2px hsl(25, 99%, 27%);
+    background-color: hsl(25, 98%, 40%);
+    color: white;
+  }
+}
+.theme3 {
+  background-color: hsl(268, 75%, 9%);
+  .calculator-container {
+    color: hsl(52, 100%, 62%);
+  }
+  .input-field {
+    background-color: hsl(268, 71%, 12%);
+    color: hsl(52, 100%, 62%);
+  }
+  .keypad-container {
+    background-color: hsl(268, 71%, 12%);
+  }
+  .key {
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: 0px 5px 0px -2px hsl(285, 91%, 52%);
+    color: hsl(52, 100%, 62%);
+  }
+  .reset-color {
+    box-shadow: 0px 5px 0px -2px hsl(268, 47%, 21%);
+    background-color: hsl(290, 70%, 36%);
+    color: white;
+  }
+  .equal-color {
+    box-shadow: 0px 5px 0px -2px hsl(176, 100%, 44%);
+    background-color: hsl(177, 92%, 70%);
+    color: hsl(198, 20%, 13%);
+  }
+}
+.move-right-1 {
+  animation: moveLeft1 0.5s ease-in-out forwards;
+}
+.move-right-2 {
+  animation: moveRight2 0.5s ease-in-out forwards; /* You can adjust the duration and timing function as needed */
+}
+.move-right-3 {
+  animation: moveRight3 0.5s ease-in-out forwards; /* You can adjust the duration and timing function as needed */
+}
+@keyframes moveLeft1 {
+  from {
+    transform: translateX(46px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes moveRight2 {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(23px);
+  }
+}
+@keyframes moveRight3 {
+  from {
+    transform: translateX(23px);
+  }
+  to {
+    transform: translateX(46px);
+  }
+}
+@media (min-width: 679px) {
+  .key:hover,
+  .equal:hover,
+  .reset:hover,
+  .toggle-btn:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+  }
+}
+
+@media (max-width: 678px) {
+  .calculator-container {
+    width: 90%;
+  }
+  .keypad {
+    justify-content: space-between;
+    gap: 20px 0px;
+  }
+  .key {
+    width: 70px;
+    height: 70px;
+    font-size: 200%;
+  }
+  .reset,
+  .equal {
+    height: 55px;
+    font-size: 170% !important;
+  }
+  .reset-color {
+    font-size: 170% !important;
+  }
+}
