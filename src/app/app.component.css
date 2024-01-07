@@ -136,6 +136,9 @@
     background-color: hsl(0, 0%, 93%);
     color: black;
   }
+  .toggle-main {
+    background-color: hsl(0, 5%, 81%);
+  }
   .keypad-container {
     background-color: hsl(0, 5%, 81%);
   }
@@ -147,6 +150,9 @@
     box-shadow: 0px 5px 0px -2px hsl(185, 58%, 25%);
     background-color: hsl(185, 42%, 37%);
     color: white;
+  }
+  .toggle-btn {
+    background-color: hsl(25, 98%, 40%);
   }
   .equal-color {
     box-shadow: 0px 5px 0px -2px hsl(25, 99%, 27%);
@@ -163,6 +169,9 @@
     background-color: hsl(268, 71%, 12%);
     color: hsl(52, 100%, 62%);
   }
+  .toggle-main {
+    background-color: hsl(268, 71%, 12%);
+  }
   .keypad-container {
     background-color: hsl(268, 71%, 12%);
   }
@@ -175,6 +184,9 @@
     box-shadow: 0px 5px 0px -2px hsl(268, 47%, 21%);
     background-color: hsl(290, 70%, 36%);
     color: white;
+  }
+  .toggle-btn {
+    background-color: hsl(177, 92%, 70%);
   }
   .equal-color {
     box-shadow: 0px 5px 0px -2px hsl(176, 100%, 44%);
